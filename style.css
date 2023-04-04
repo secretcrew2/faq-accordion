@@ -13,7 +13,8 @@ body{
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
 }
 .container{
@@ -88,6 +89,17 @@ body{
 }
 .faq{
     padding: 3rem 4rem 3rem 0;
+}
+.attribution{
+    color: white;
+}
+.attribution a{
+    color:#A1E967 !important;
+    text-decoration: none;
+}
+.attribution a img{
+    width: 1rem;
+    height: auto;
 }
 @media (max-width:576px) {
     body{
