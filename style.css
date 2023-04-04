@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+}
+body{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 47rem;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-x: -43rem;
+    background-position-y: -23rem;
+    background-color: white;
+    margin: 0 auto;
+    padding:2rem;
+    border-radius: 1rem;
+}
+#image1{
+    display: none;
+}
+#image2{
+    width: 100%;
+    height: auto;
+    transform: translateX(-28%);
+
+}
+.image-section{
+    align-self: center;
+}
+#title{
+    margin-bottom: 1rem;
+}
+.accordion{
+    border-style: none;
+    width: 100%;
+    padding: 0.75rem 0;
+    text-align: start;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(240, 6%, 50%);
+    /* border-bottom: 1px solid rgb(228, 228, 228); */
+}
+/* .accordion::after{
+    content: url(images/icon-arrow-down.svg);
+    float: right;
+} */
+.content-paragraph{
+    padding-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: hsl(240, 5%, 91%);
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.arrow{
+    margin-left: 1.5rem;
+}
+.active{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+.active .arrow{
+    transform: rotate(180deg);
+}
+.faq{
+    padding: 3rem 4rem 3rem 0;
+}
+@media (max-width:576px) {
+    body{
+        padding: 0 1.25rem;
+    }
+    .container{
+        max-width: 300px;
+        display: block;
+        padding-top: 0;
+        background: url('images/bg-pattern-mobile.svg');
+        background-position-x: 2rem;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    
+    .image-section{
+        display: flex;
+        justify-content: center;
+        height: 7.5rem;
+        /* background: url('images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 100%; */
+    }
+    #image2{
+        display: none;
+    }
+    #image1{
+        display: block;
+        width: 90%;
+        height: 15rem;
+        transform: translateY(-136px);
+    }
+    .faq{
+        padding: 0;
+        text-align: center;
+    }
+    #title{
+        margin-top: 1rem;
+    }
+
+}
