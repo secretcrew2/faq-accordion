@@ -63,6 +63,8 @@ body{
 .content-paragraph{
     padding-bottom: 0.75rem;
     font-size: 0.75rem;
+    text-align: start;
+    color: hsl(240, 6%, 50%);
 }
 .line{
     height: 1px;
