@@ -74,6 +74,13 @@ body{
 .accordion:hover{
     cursor: pointer;
 }
+.accordion::after{
+    content: url('images/icon-arrow-down.svg');
+    margin-left: 1rem;
+}
+.active::after{
+    transform: rotate(180deg);
+}
 .content{
     max-height: 0;
     overflow: hidden;
